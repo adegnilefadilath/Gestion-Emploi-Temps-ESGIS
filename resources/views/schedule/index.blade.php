@@ -48,4 +48,9 @@
             </tbody>
         </table>
     </div>
+    <div class="bg-blue-100 p-3 rounded-lg border-l-4 border-blue-500 relative">
+    <p class="font-bold text-blue-800 text-sm">Algorithmique</p>
+    <p class="text-xs text-blue-600">Salle 102</p>
+    <p class="text-xs font-semibold text-indigo-700 mt-1 italic">Prof: M. DOSSOU</p>
+</div>
 @endsection

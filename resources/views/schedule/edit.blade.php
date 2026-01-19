@@ -36,6 +36,10 @@
                 <label class="block text-sm font-semibold text-gray-700">Salle</label>
                 <input type="text" name="room" value="Salle 102" class="w-full p-3 border border-gray-300 rounded-lg mt-1">
             </div>
+            <div>
+    <label class="block text-sm font-semibold text-gray-700">Nom du Professeur</label>
+    <input type="text" name="teacher" value="M. DOSSOU" class="w-full p-3 border border-gray-300 rounded-lg mt-1">
+</div>
         </div>
 
         <div class="flex gap-4 pt-4">

@@ -11,6 +11,10 @@
             <label class="block text-sm font-semibold text-gray-700">Nom de la matière</label>
             <input type="text" name="subject" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none mt-1" placeholder="Ex: Mathématiques">
         </div>
+        <div>
+    <label class="block text-sm font-semibold text-gray-700">Nom du Professeur</label>
+    <input type="text" name="teacher" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none mt-1" placeholder="Ex: M. DOSSOU">
+</div>
 
         <div class="grid grid-cols-2 gap-4">
             <div>
