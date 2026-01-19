@@ -15,14 +15,14 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block text-sm font-semibold text-gray-700">Jour</label>
-                <select name="day" class="w-full p-3 border border-gray-300 rounded-lg mt-1">
-                    <option>Lundi</option>
-                    <option>Mardi</option>
-                    <option>Mercredi</option>
-                    <option>Jeudi</option>
-                    <option>Vendredi</option>
-                    <option>Samedi</option>
-                </select>
+               <select name="day" class="w-full p-3 border border-gray-300 rounded-lg mt-1">
+    <option value="Lundi">Lundi</option>
+    <option value="Mardi">Mardi</option>
+    <option value="Mercredi">Mercredi</option>
+    <option value="Jeudi">Jeudi</option>
+    <option value="Vendredi">Vendredi</option>
+    <option value="Samedi">Samedi</option>
+</select> 
             </div>
             <div>
                 <label class="block text-sm font-semibold text-gray-700">Salle</label>
