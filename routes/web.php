@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/mon-planning', function () {
     return view('schedule.index');
 });
+
+Route::get('/mon-planning/ajouter', function () {
+    return view('schedule.create');
+});
