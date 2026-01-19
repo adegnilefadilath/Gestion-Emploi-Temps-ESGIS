@@ -9,6 +9,11 @@
             Ajouter un cours
         </a>
     </div>
+    <div class="mb-4">
+    <h2 class="text-xl font-semibold text-indigo-700">
+        Planning : <span class="text-gray-900">Licence 3 - Achitecture et Logiciel (AL)</span>
+    </h2>
+</div>
 
     <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
         <table class="w-full border-collapse">
