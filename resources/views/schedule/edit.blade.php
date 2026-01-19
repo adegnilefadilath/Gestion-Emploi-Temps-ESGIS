@@ -23,11 +23,14 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <label class="block text-sm font-semibold text-gray-700">Jour</label>
-                <select name="day" class="w-full p-3 border border-gray-300 rounded-lg mt-1">
-                    <option selected>Lundi</option>
-                    <option>Mardi</option>
-                    <option>Mercredi</option>
-                    </select>
+<select name="day" class="w-full p-3 border border-gray-300 rounded-lg mt-1">
+    <option value="Lundi">Lundi</option>
+    <option value="Mardi">Mardi</option>
+    <option value="Mercredi">Mercredi</option>
+    <option value="Jeudi">Jeudi</option>
+    <option value="Vendredi">Vendredi</option>
+    <option value="Samedi">Samedi</option>
+</select>
             </div>
             <div>
                 <label class="block text-sm font-semibold text-gray-700">Salle</label>
@@ -36,9 +39,9 @@
         </div>
 
         <div class="flex gap-4 pt-4">
-            <button type="submit" class="w-full py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 shadow-lg transition">
-                Mettre à jour les modifications
-            </button>
+            <a href="/mon-planning" class="w-full block text-center py-3 bg-green-600 text-white font-bold rounded-lg">
+    Mettre à jour les modifications
+</a>
         </div>
     </form>
 </div>
