@@ -1,25 +1,20 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/mon-planning', function () {
-    return view('schedule.index');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/mon-planning/ajouter', function () {
-    return view('schedule.create');
-});
-
-Route::get('/mon-planning/modifier', function () {
-    return view('schedule.edit');
-});
-use App\Http\Controllers\ScheduleController;
-
-// Cette route affiche le planning uniquement si l'utilisateur est connecté
-Route::middleware(['auth'])->group(function () {
-    Route::get('/mon-planning', [ScheduleController::class, 'index'])->name('schedule.index');
-});
+require __DIR__.'/auth.php';
