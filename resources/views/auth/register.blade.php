@@ -37,7 +37,28 @@
                             name="password_confirmation" required autocomplete="new-password" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div><div class="mt-4">
+            <x-input-label for="level" :value="__('Niveau d\'étude')" />
+            <select name="level" id="level" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" required>
+                <option value="" disabled selected>Choisissez votre niveau</option>
+                <option value="L1" {{ old('level') == 'L1' ? 'selected' : '' }}>Licence 1 (L1)</option>
+                <option value="L2" {{ old('level') == 'L2' ? 'selected' : '' }}>Licence 2 (L2)</option>
+                <option value="L3" {{ old('level') == 'L3' ? 'selected' : '' }}>Licence 3 (L3)</option>
+            </select>
+            <x-input-error :messages="$errors->get('level')" class="mt-2" />
         </div>
+
+        <div class="mt-4">
+            <x-input-label for="major" :value="__('Filière')" />
+            <select name="major" id="major" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" required>
+                <option value="" disabled selected>Choisissez votre filière</option>
+                <option value="AL" {{ old('major') == 'AL' ? 'selected' : '' }}>Architecture et Logiciel (AL)</option>
+                <option value="SI" {{ old('major') == 'SI' ? 'selected' : '' }}>Systèmes d'Information (SI)</option>
+                <option value="SRC" {{ old('major') == 'SRC' ? 'selected' : '' }}>Réseaux et Cloud (SRC)</option>
+            </select>
+            <x-input-error :messages="$errors->get('major')" class="mt-2" />
+        </div>
+
 
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
