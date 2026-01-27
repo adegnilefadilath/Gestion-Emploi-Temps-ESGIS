@@ -17,3 +17,9 @@ Route::get('/mon-planning/ajouter', function () {
 Route::get('/mon-planning/modifier', function () {
     return view('schedule.edit');
 });
+use App\Http\Controllers\ScheduleController;
+
+// Cette route affiche le planning uniquement si l'utilisateur est connecté
+Route::middleware(['auth'])->group(function () {
+    Route::get('/mon-planning', [ScheduleController::class, 'index'])->name('schedule.index');
+});

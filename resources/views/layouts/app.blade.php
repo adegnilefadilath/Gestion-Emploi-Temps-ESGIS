@@ -11,7 +11,7 @@
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <span class="font-bold text-xl">ESGIS Planning</span>
             <div>
-                <a href="/mon-planning" class="px-3 hover:underline">Mon Planning</a>
+            <a href="{{ route('schedule.index') }}" class="px-3 hover:underline">Mon Planning</a>
             </div>
         </div>
     </nav>
